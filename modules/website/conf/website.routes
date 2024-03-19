@@ -1,0 +1,5 @@
+GET        /                           controllers.website.WebsiteController.index()
+
+GET        /public/*file               controllers.website.Assets.versioned(path="/public/lib/website", file: Asset)
+GET        /assetswebsite/*file        controllers.website.Assets.at(path="/public/lib/website", file)
+->         /                           common.Routes
